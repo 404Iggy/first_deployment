@@ -1,6 +1,8 @@
 import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
-export default {
+export default defineConfig({
+  base: './first_deployment/',
   root: resolve(__dirname, 'src'),
   publicDir: resolve(__dirname, 'image'),
   build: {
@@ -22,4 +24,4 @@ export default {
         },
      },
   },
-}
+})
